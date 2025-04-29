@@ -11,7 +11,7 @@ class PricePredictionNN(nn.Module):
       super(PricePredictionNN, self).__init__()
       self.fc1 = nn.Linear(input_dim, 64)  # First hidden layer (64 nodes)
       self.fc2 = nn.Linear(64, 32)         # Second hidden layer (32 nodes)
-      self.fc3 = nn.Linear(32, 1)          # Output layer layer (1 nodes)
+      self.fc3 = nn.Linear(32, 1)          # Output layer (1 nodes)
       self.dropout = nn.Dropout(p=0.5) # 30! chance of dropout
 
    def forward(self, x):
